@@ -1,0 +1,66 @@
+// Style sheet
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin:0;
+
+	background:rgba(56,76,45, .56);
+}
+
+#notifications {
+	position: fixed;
+	bottom: 2%;
+	right: 5%;
+	clear: both;
+
+	width: 300px;
+	height: auto;
+}
+
+.alert {
+
+	width: 100%;
+	height: auto;
+	padding: 20px;
+
+	display: block;
+	opacity: 0;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	border-left: 15px solid rgba(0,0,0,.22);
+
+	transition:opacity .2s ease-in;
+	-webkit-transition: opacity .2s ease-in;
+}
+
+.alert h2 {
+	display: block;
+	font-family: trebuchet;
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	font-weight:bolder;
+}
+
+.alert p {
+	display: block;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+
+	text-align:justify;
+	text-justify:inner-word;
+}
+
+.alert span {
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+}
+
